@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCD Boxing</title>
+    <!--CSS linked here-->
+    <link rel="stylesheet" href="style.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+
+    <!--This is where actual html is written-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+
+<div class="header">
+
+  <h1 class= "logo">
+    <div class="logo-inner-top">
+      UCD
+    </div> 
+    <div class="logo-inner-bot">
+      Boxing
+    </div> 
+  </h1>
+
+  <img src="./images/aggies2.svg" alt="aggies" class="aggie-top">
+
+  <ul class="nav">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a target="_blank" href="https://give.ucdavis.edu/CRSC/6820834">Donate</a></li>
+  </ul>
+
+
+</div>
+<div class="gold"></div>
+
+<div class="grid-container">  
+
+  <div class="header-grid">
+    <h1>Practice</h1>
+    <div class="learn-more-about">
+      <p>practices will be held 3 times a week and an additional 4th practice may be held on sundays for those who are more serious about their commitment to boxing.</p>
+    </div>
+  </div>
+
+  <div class="practice-grid">
+    <div class="grid-header">
+      <h2>Typical Practice Structure</h2>
+    </div>
+
+    <div class="learn-more-about">
+      <h2>Warm-Up</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quia quo accusamus mollitia reprehenderit voluptatem quod omnis veritatis vel unde minus dolores, impedit officiis porro, asperiores molestiae natus. Dolore quasi consequatur dolores quas similique libero autem quidem accusamus et, officia nostrum nesciunt maxime magnam rem, architecto odit ad ipsa iste!</p>
+    </div>
+
+    <div class="learn-more-about">
+      <h2>Mitt Work</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quia quo accusamus mollitia reprehenderit voluptatem quod omnis veritatis vel unde minus dolores, impedit officiis porro, asperiores molestiae natus. Dolore quasi consequatur dolores quas similique libero autem quidem accusamus et, officia nostrum nesciunt maxime magnam rem, architecto odit ad ipsa iste!</p>
+    </div>
+
+    <div class="learn-more-about">
+      <h2>Conditioning</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quia quo accusamus mollitia reprehenderit voluptatem quod omnis veritatis vel unde minus dolores, impedit officiis porro, asperiores molestiae natus. Dolore quasi consequatur dolores quas similique libero autem quidem accusamus et, officia nostrum nesciunt maxime magnam rem, architecto odit ad ipsa iste!</p>
+    </div>
+  </div>
+
+  <div class="schedule-grid">
+    <div class="schedule-container">
+      
+     <div class="schedule-wrapper">
+      <div class="grid-header">
+        <h2>Location:</h2>
+      </div>
+
+      <div class="learn-more-about">
+        <div class="time">
+          Monday, Wednesday, Friday @ The Pavillion
+          Sundays 170 Palm Ave, Woodland
+
+        </div>
+      </div>
+     </div>
+
+     <div id='map' style='width: 400px; height: 300px;'></div>
+     <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoibWpwaXR0cyIsImEiOiJja3Mwa2xsMGYwaGs0MnBxbThwMngzdTNwIn0.3STKoTGB-nhJVqa2M3p3vA';
+      var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [-121.7594, 38.542], // starting position
+      zoom: 16 // starting zoom
+      });
+
+
+      // Add zoom and rotation controls to the map.
+      map.addControl(new mapboxgl.NavigationControl());
+     </script>
+
+
+     <div class="schedule-wrapper">
+      <div class="grid-header">
+        <h2>Schedule:</h2>
+      </div>
+
+      <div class="learn-more-about">
+        <div class="time">
+          Monday, Wednesday, Friday: 5:00 - 7:00PM
+          *Sundays 10:00AM - 12:00PM
+
+        </div>
+      </div>
+     </div>   
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="sparring">
+  <div class="learn-more-about">
+    <h2>Sparring (optional)</h2>
+    <h4>Prereqs:
+       At least 1 quarter of consistent training with the club, or an unusual amount of profeceincy with boxing.</h4>
+  
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam doloribus saepe voluptas delectus autem deleniti nobis molestiae illum minima facere unde, non dignissimos, quod id officia, facilis voluptate. Ab laudantium, accusamus minima fuga odit commodi, veniam dolorum earum ex ut esse laborum provident aliquam nulla nesciunt! Id porro magni mollitia, aperiam excepturi facere voluptatem consequuntur, incidunt aspernatur harum beatae at tempora, saepe esse optio minima ratione dignissimos eum adipisci! Impedit iure fugiat suscipit! Totam voluptates illo perferendis. Atque quia suscipit dolore distinctio, exercitationem tempore at? Laboriosam inventore exercitationem, consequuntur ex rem veniam mollitia, alias obcaecati dolore sit, quae hic eligendi.
+      </p>
+  </div>
+</div>
+
+</body>
